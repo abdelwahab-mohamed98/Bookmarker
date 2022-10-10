@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 8</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row my-5 py-4 border-bottom border-1 border-muted">
+      <div class="title">
+        <a href="#" class="text-decoration-none"><h1 class="fs-2 text-muted">Bookmarker</h1></a>
+      </div>
+    </div>
+    <div class="row text-center text-dark text-opacity-75 bg-light rounded-3 shadow-lg">
+      <h2 class="text-uppercase pt-5">Bookmark your favorite sites</h2>
+      <div class="content my-5">
+        <div class="form-floating mb-4 mx-auto w-75">
+          <input type="text" class="form-control" id="siteNameInput">
+          <label for="siteNameInput">Site Name</label>
+        </div>
+        <div class="form-floating mb-4 mx-auto w-75">
+          <input type="text" class="form-control" id="siteLinkInput">
+          <label for="siteLinkInput">Site Link</label>
+        </div>
+        <button onclick="addBookmark()" class="w-75 btn btn-primary shadow" id="submitBtn">Add Bookmark</button>
+      </div>
+  </div>
+  <div class="row my-5">
+    <input oninput="searchBookmark(this.value)" type="search" class="form-control mx-auto w-50" placeholder="Search Here ...">
+    <table class="table mt-5 text-center">
+      <thead>
+        <th>Index</th>
+        <th>Name</th>
+        <th>Visit</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </thead>
+      <tbody id="tableBody">
+
+      </tbody>
+    </table>
+    </div>
+
+    <div class="row text-center pt-3 mt-5 border-1 border-muted border-top">
+      <p class="text-muted">&COPY; 2022 Bookmarker Inc.</p>
+      <p class="text-muted">Rebuild By : <a href="#" class="text-primary fw-bold opacity-75 text-decoration-none">Abdelwahab</a></p>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

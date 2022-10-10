@@ -1,0 +1,3 @@
+.container .row:first-child .title h1:hover {
+  color: #0d6efd !important;
+}
