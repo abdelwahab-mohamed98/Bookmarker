@@ -3,7 +3,7 @@ var siteLinkInput = document.getElementById("siteLinkInput");
 var currenIndex = 0;
 var bookmarksContainer = [];
 
-if (localStorage =! null){
+if (localStorage.getItem("bookmarks") =! null){
   bookmarksContainer = JSON.parse(localStorage.getItem("bookmarks"));
   displayBookmark();
 }
